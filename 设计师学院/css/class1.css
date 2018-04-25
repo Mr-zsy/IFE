@@ -16,8 +16,12 @@
 	border-bottom-color:#0568D0;
 	border-bottom-style: none;
 	padding: 15px;
+	-webkit-transition-property: width,color;
+	-moz-transition-property: width,color;
 	transition-property: width,color;
-	transition-duration: 1s;
+	-webkit-transition-duration: 1s;
+	-moz-transition-duration: 1s;
+	        transition-duration: 1s;
 }
 label{
 	
