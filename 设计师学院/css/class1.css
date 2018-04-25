@@ -1,0 +1,44 @@
+#box{
+	position: absolute;
+	width: 300px;
+	height: 200px;
+	left: 50%;
+	top: 50%;
+	margin-left: -150px;
+	margin-top: -150px;
+	text-align: center;
+}
+#outer{
+	margin: 0 auto;
+	width: 0;
+	height: 35px;
+	border-bottom-width: 3px;
+	border-bottom-color:#0568D0;
+	border-bottom-style: none;
+	padding: 15px;
+	transition-property: width,color;
+	transition-duration: 1s;
+}
+label{
+	
+	font-weight: bolder;
+	font-size: 30px;
+	display: block;
+	position: absolute;
+	left: 50%;
+	margin-left: -75px;
+	width: 150px;
+	height: 35px 
+}
+button{
+	position: absolute;
+	width: 120px;
+	height: 40px;
+	border-radius: 5px;
+	font-weight: bolder;
+	line-height: 100%;
+	font-size: 20px;
+	left: 50%;
+	top: 40%;
+	margin-left: -60px;
+}
