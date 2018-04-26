@@ -37,28 +37,119 @@ audio{
 	opacity: 0.3;
 	border-radius: 5px;
 	position: flex;
+	z-index: 2;
 }
 #cv{
 	border:3px #A9A6A6 dotted;
-	width: 60%;
-	height: 1000px;
+	width: 75%;
+	height: auto;
 	margin:50px auto;
 	opacity: 0.8;
+	background-color:#C9C8C8;
+	padding: 30px;
 }
 
-aside{
-	width: 200px;
-	height: 100%;
-	border:3px #A9A6A6 solid;
-	float: left;
-	background-color: #496F76;
+
+	#picture{
+		width: 150px;
+		height: 150px;
+		border-radius: 75px;
+		border:3px #A9A6A6 solid;
+		margin: 30px auto;
+		overflow: hidden;
+	}
+	#picture img{
+		width: 150px;
+	}
+
+	#message{
+		width: 85%;
+		font-size: 37px;
+		border:2px #A9A6A6 dotted;
+		text-align: center;
+		margin: 40px auto;
+		color: #535353;
+	}
+	#message li{
+		list-style: none;
+		display: inline-block;
+		margin: 20px;
+	}
+	#message li b{
+		font-size: 30px;
+		color: #373737;
+	}	
+
+fieldset{
+		padding: 25px;
+		margin: 0 auto;
+		width: 80%;
+		margin-bottom: 40px;
+	}
+#expecrise p{
+    font-size: 20px;
 }
-article{	
-	width: 100%;
-	height: 100%;
-	border:3px #A9A6A6 solid;
-	background-color: #496A71;
-	/*position: absolute;
-	left: 50%
-	top: 50%;*/
+#ability ul{
+	list-style: none;
 }
+	#ability ul li{
+		margin-bottom: 20px;
+		height: 40px;
+		width: 80%;
+		border-radius: 20px;
+		background-color:#EDF0FF;
+		font-size: 20px;
+		font-weight:bold;
+	}
+	#ability div{
+		box-sizing: border-box;
+		height: 40px;
+		border-radius: 20px;
+		padding: 5px 20px;
+	}
+	#ability li:nth-of-type(1) div{
+		background-color:#F11E55;
+		width: 70%;
+	}
+	#ability li:nth-of-type(2) div{
+		background-color: #F89A55;
+		width: 85%;
+	}
+	#ability li:nth-of-type(3) div{
+		background-color: #55F8B8;
+		width: 80%;
+	}
+	#ability li:nth-of-type(4) div{
+		background-color: #5565F8;
+		width: 75%;
+	}
+	#ability li:nth-of-type(5) div{
+		background-color: #55F886;
+		width: 50%;
+	}
+	#ability li:nth-of-type(6) div{
+		background-color: #D9F855;
+		width: 40%;
+	}
+	#ability li:nth-of-type(7) div{
+		background-color: #F855CC;
+		width: 35%;
+	}
+	#ability li:nth-of-type(8) div{
+		background-color: #762BE5;
+		width: 30%;
+	}
+	#ability li:nth-of-type(9) div{
+		background-color: #5E8A1A;
+		width: 30%;
+	}
+#project dt{
+	font-size: 20px;
+	font-weight: bold;
+}
+#project dd{
+	margin: 20px;
+}
+#hobby p{
+	
+	}
