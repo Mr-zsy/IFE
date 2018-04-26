@@ -159,3 +159,9 @@ fieldset{
 #hobby p{
 	
 	}
+footer{
+	text-align: center;
+}
+	footer span{
+		margin-left: 50px;
+	}
