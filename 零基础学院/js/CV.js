@@ -13,3 +13,21 @@ $(function() {
 	// 	$("#all").height(s_height);
 	// });
 })
+
+for(var i=0;i<9;i++){
+	 $("#ability li:eq("+i+")").hover(function() {
+	 	$(this).width("85%");
+	 	$(this).height("50px");
+	 	$(this).css({
+	 		"font-size":"30px",
+	 		"box-shadow":"2px 2px 2px #717070"
+	 	});
+	 }, function() {
+	 	$(this).width("80%");
+	 	$(this).height("40px");
+	 	$(this).css({
+	 		"font-size": "25px",
+	 		"box-shadow":"none"
+	 	});
+	 });
+}

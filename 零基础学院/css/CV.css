@@ -28,6 +28,7 @@ body{
 	font-family: "华文琥珀","华文彩云",sans-serif;
 	padding-top: 45px;
 	color: #32A3AA;
+	text-shadow: -2px -2px 3px black;
 }
 	
 audio{
@@ -89,23 +90,28 @@ fieldset{
 #expecrise p{
     font-size: 20px;
 }
-#ability ul{
-	list-style: none;
+#ability{
+	height: 670px;
 }
+	#ability ul{
+		list-style: none;
+	}
 	#ability ul li{
 		margin-bottom: 20px;
 		height: 40px;
 		width: 80%;
 		border-radius: 20px;
 		background-color:#EDF0FF;
-		font-size: 20px;
-		font-weight:bold;
+		font-size: 25px;
 	}
 	#ability div{
 		box-sizing: border-box;
-		height: 40px;
+		height: inherit;
 		border-radius: 20px;
-		padding: 5px 20px;
+		padding-left: 20px;
+		padding:-top: 20%;
+		font-weight:bold;
+		line-height: 40px;
 	}
 	#ability li:nth-of-type(1) div{
 		background-color:#F11E55;
