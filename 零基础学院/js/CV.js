@@ -20,7 +20,7 @@ for(var i=0;i<9;i++){
 	 	$(this).height("50px");
 	 	$(this).css({
 	 		"font-size":"30px",
-	 		"box-shadow":"2px 2px 2px #717070"
+	 		"box-shadow":"1px 2px 2px #717070"
 	 	});
 	 }, function() {
 	 	$(this).width("80%");
