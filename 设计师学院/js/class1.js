@@ -11,7 +11,7 @@ btn.onclick = function(){
 	}else {
 		underline.style.width = "0px";		
 		txt.style.color = "black";
-	 	setTimeout(function(){underline.style.borderStyle = "none";},400);
+	 	setTimeout(function(){underline.style.borderStyle = "none";},300);
 
 	}
 };

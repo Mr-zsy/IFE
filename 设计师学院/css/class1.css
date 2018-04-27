@@ -21,9 +21,9 @@
 	-webkit-transition-property: width;
 	-moz-transition-property: width;
 	transition-property: width;
-	-webkit-transition-duration: 0.5s;
-	-moz-transition-duration: 0.5s;
-	        transition-duration: 0.5s;
+	-webkit-transition-duration: 0.3s;
+	-moz-transition-duration: 0.3s;
+	        transition-duration: 0.3s;
 
 }
 label{
@@ -39,9 +39,9 @@ label{
 	-webkit-transition-property: color;
 	-moz-transition-property: color;
 	transition-property: color;
-	-webkit-transition-duration: 0.5s;
-	-moz-transition-duration: 0.5s;
-	        transition-duration: 0.5s;
+	-webkit-transition-duration: 0.3s;
+	-moz-transition-duration: 0.3s;
+	        transition-duration: 0.3s;
 }
 button{
 	position: absolute;
