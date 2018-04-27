@@ -30,13 +30,14 @@ body{
 	color: #32A3AA;
 	text-shadow: -2px -2px 3px black;
 }
-	
+
+/*播放器	*/
 audio{
 	position: fixed;
-	left: 81%;
+	right: 2%;
 	top:2%;
 	opacity: 0.3;
-	border-radius: 5px;
+	border-radius: 15px;
 	position: flex;
 	z-index: 2;
 }
@@ -50,19 +51,19 @@ audio{
 	padding: 30px;
 }
 
-
+/*头像	*/
 	#picture{
 		width: 150px;
 		height: 150px;
 		border-radius: 75px;
-		border:3px #A9A6A6 solid;
+		border:3px #A9A6A6 groove;
 		margin: 30px auto;
 		overflow: hidden;
 	}
 	#picture img{
 		width: 150px;
 	}
-
+/*个人信息*/
 	#message{
 		width: 85%;
 		font-size: 37px;
@@ -87,9 +88,12 @@ fieldset{
 		width: 80%;
 		margin-bottom: 40px;
 	}
+/*教育经历	*/
 #expecrise p{
     font-size: 20px;
 }
+
+/*技能部分*/
 #ability{
 	height: 670px;
 }
@@ -149,6 +153,12 @@ fieldset{
 		background-color: #5E8A1A;
 		width: 30%;
 	}
+
+/*项目*/
+#project dl{
+	float: left;
+	margin: 30px;
+}
 #project dt{
 	font-size: 20px;
 	font-weight: bold;
@@ -159,9 +169,11 @@ fieldset{
 #hobby p{
 	
 	}
+
+/*尾部	*/
 footer{
 	text-align: center;
 }
 	footer span{
-		margin-left: 50px;
+		margin-bottom: 15px;
 	}
