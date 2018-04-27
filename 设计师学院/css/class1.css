@@ -8,20 +8,23 @@
 	margin-top: -150px;
 	text-align: center;
 }
-#outer{
-	margin: 0 auto;
-	width: 0;
-	height: 35px;
-	border-bottom-width: 3px;
-	border-bottom-color:#0568D0;
-	border-bottom-style: none;
-	padding: 15px;
-	-webkit-transition-property: width,color;
-	-moz-transition-property: width,color;
-	transition-property: width,color;
-	-webkit-transition-duration: 1s;
-	-moz-transition-duration: 1s;
-	        transition-duration: 1s;
+
+#underline{
+	/*width: 150px;*/
+	display: inline-block;
+	height: 0px;
+	width: 0px;
+	border-width:2px;
+	border-color: #0568D0;
+	margin-top: 50px;
+
+	-webkit-transition-property: width;
+	-moz-transition-property: width;
+	transition-property: width;
+	-webkit-transition-duration: 0.5s;
+	-moz-transition-duration: 0.5s;
+	        transition-duration: 0.5s;
+
 }
 label{
 	
@@ -33,6 +36,12 @@ label{
 	margin-left: -75px;
 	width: 150px;
 	height: 35px 
+	-webkit-transition-property: color;
+	-moz-transition-property: color;
+	transition-property: color;
+	-webkit-transition-duration: 0.5s;
+	-moz-transition-duration: 0.5s;
+	        transition-duration: 0.5s;
 }
 button{
 	position: absolute;

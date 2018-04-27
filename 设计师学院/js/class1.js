@@ -1,16 +1,18 @@
 var btn = document.getElementById("btn");
-var outer = document.getElementById("outer");
+var underline = document.getElementById("underline");
+var txt = document.getElementsByTagName("label")[0];
 
 btn.onclick = function(){
 	this.blur();
-	if(outer.style.width == "0px"){
-		outer.style.width = "150px";
-		outer.style.borderBottomStyle = "solid";
-		outer.style.color = '#0568D0';
+	if(!underline.offsetWidth){
+		underline.style.width = "150px";
+		underline.style.borderStyle = "solid";
+		txt.style.color = "#0568D0";
 	}else {
-		outer.style.width = "0px";
-		outer.style.color = "black";
-		setTimeout(function(){outer.style.borderBottomStyle = "none";},500);
+		underline.style.width = "0px";		
+		txt.style.color = "black";
+	 	setTimeout(function(){underline.style.borderStyle = "none";},400);
+
 	}
 };
 
