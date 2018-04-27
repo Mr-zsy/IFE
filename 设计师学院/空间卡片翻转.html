@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>class4</title>
+	<style>
+		/*外部盒子整体定位，宽度要等于内部图片大小否则不会中轴旋转*/
+		#outer{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin:-200px 0 0  -125px;
+			width: 250px;
+			height: 400px;
+		}
+		/*内部盒子旋转*/
+		#inner{
+			position: relative;
+			
+			/*使被转换的子元素保留其 3D 转换*/
+			transform-style: preserve-3d;
+			transition-duration: 1s;
+		}
+		img{
+			display: block;
+		}
+		#behind{
+			position: absolute;
+			/*使被转换的子元素保留其 3D 转换*/
+			transform-style: preserve-3d;
+			transform: rotateY(180deg);
+			
+		}
+		#front{
+			position: absolute;
+			/*使被转换的子元素保留其 3D 转换*/
+			transform-style: preserve-3d;
+			/*背面不可见*/
+			backface-visibility:hidden;
+		}
+		#inner:hover{
+			transform: rotateY(180deg);
+		}
+
+	
+	</style>
+</head>
+<body>
+	<div id="outer">
+		<div id="inner">
+			<img src="img/反面.jpg" alt="反面图片" id="behind">
+			<img src="img/正面.jpg" alt="正面图片" id="front">
+		</div>
+	</div>
+</body>
+</html>
