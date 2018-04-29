@@ -254,9 +254,9 @@
 		var littlePicture = document.querySelectorAll("#little-picture img");
 		var bigPicture = document.querySelectorAll("#big-picture img");
 
-		// 注意闭包
-		for(var i=0;i<5;i++){
-			 (function(i){
+		// let简化写法
+		for(let i=0;i<5;i++){
+			
 				littlePicture[i].onclick = function (){
 					// 移除大图节点然后再添加，默认添加到最后一个img节点使其出现在所有图片最上层
 					bigPicture[0].parentNode.appendChild(bigPicture[i]);
@@ -264,8 +264,21 @@
 					bigPicture[i].style.animationName = "picture"+(i+1);
 				};
 
-			})(i);
+			
 		}
+
+		// 闭包内部函数
+		// for(var i=0;i<5;i++){
+		// 	 (function(i){
+		// 		littlePicture[i].onclick = function (){
+		// 			// 移除大图节点然后再添加，默认添加到最后一个img节点使其出现在所有图片最上层
+		// 			bigPicture[0].parentNode.appendChild(bigPicture[i]);
+		// 			// 添加动画	
+		// 			bigPicture[i].style.animationName = "picture"+(i+1);
+		// 		};
+
+		// 	})(i);
+		// }
 		
 		// 不用闭包的麻烦写法
 		// littlePicture[0].onclick = function(){
