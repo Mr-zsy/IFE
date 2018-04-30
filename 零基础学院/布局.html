@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>class7/8</title>
+	<style>
+		html,body,div,ul,li,p,nav,header {
+			margin: 0;
+			padding: 0;
+			border: 0;
+		}
+		body{
+			font-family: "Arial","Microsoft YaHei","黑体","宋体",sans-serif;
+		}
+		li{
+			list-style:none;
+		}
+		header{
+			width: 100%;
+			height: 60px;
+			background-color: #363535;
+		}
+		#header-content{
+			width: 960px;
+			height: 100%;
+			margin: 0 auto;
+			color: white;
+		}
+		#header-content span{
+			font-family: "黑体";
+			font-weight: bold;
+			font-size: 20px;
+			line-height: 60px;
+			float: left;
+		}
+		#header-content a{
+			float: right;
+			margin-left: 20px;
+			margin-top: 5px;
+		}
+		a:link{
+			color: white;
+		}
+
+		/*轮播区*/
+		#banner{
+			width: 100%;
+			height: 200px;
+			background-color: #68CA38;
+		}
+		#banner ul{
+			z-index: 1;
+			position: absolute;
+			left: 75%;
+			top: 30%;
+			display: flex;
+			/*子元素交叉轴如何对齐*/
+			align-items: flex-end;
+		}
+		#banner li{
+			float: left;
+			width: 20px;
+			height: 25px;
+			margin-right: 5px;
+			opacity: 0.5;
+			border:1px solid black;
+			text-align: center;
+			background-color: white;
+			line-height: 25px;
+		}
+		#banner li:nth-of-type(2){
+			height: 35px;
+			opacity: 0.8;
+			line-height: 40px;
+		}
+		/*主导航区*/
+		nav{
+			width: 100%;
+			border-bottom: 1px solid #7D7C7C;
+			height: 70px;
+		}
+		#menu{
+			width: 960px;
+			margin: 0 auto;
+			overflow: hidden;
+			zoom:1;
+		}
+		.nav-item{
+			box-sizing: border-box;
+			float: left;
+			width: 100px;
+			height: 50px;
+			line-height: 50px;
+			text-align: center;
+			border: 1px solid #7D7C7C;
+			border-radius: 20px 20px 0 0;
+			margin-top: 21px;
+			background-color: #D8D8DC;
+			/*border-style: solid;
+			border-color: white;*/
+		}
+		.nav-item:nth-of-type(1){
+			border-bottom: 1px solid white;
+			background-color: white;
+		}
+		/*主内容区域*/
+		#main{
+			width: 960px;
+			margin: 0 auto;
+			overflow: hidden;
+			zoom:1;
+			/*flex布局*/
+			display: flex;
+			/*自动换行*/
+			flex-wrap:wrap;
+			/*子元素主轴上对齐方式*/
+			justify-content: center;
+		}
+		.main-content{
+			border: 1px solid #7D7C7C;
+			padding: 80px;
+			float: left;	
+			margin-top: 5px;
+			margin-right: 5px;
+			text-align: center;
+			/*剩余空间时放大1.5倍*/
+			flex-grow:1.5;
+			
+		}
+	</style>
+</head>
+<body>
+	<!-- 头部 -->
+	<header>
+		<div id="header-content">
+			<span>Logo</span>
+			<p>
+				<a href="#">Login</a>
+				<a href="#">Register</a>
+				<a href="#">Github</a>				
+			</p>
+		</div>
+	</header>
+	<!-- 轮播区 -->
+	<div id="banner">
+		<ul>
+			<li class="img-mum">1</li>
+			<li class="img-mum">2</li>
+			<li class="img-mum">3</li>
+			<li class="img-mum">4</li>
+		</ul>
+	</div>
+	<!-- 主导航 -->
+	<nav>
+		<ul id="menu">
+			<li class="nav-item">HOME</li>
+			<li class="nav-item">PROFILE</li>
+			<li class="nav-item">ABOUT</li>
+		</ul>
+	</nav>
+	<!-- 主要内容 -->
+	<div id="main">
+		<section class="main-content">This is Content 1</section>
+		<section class="main-content">MaybeContent 2</section>
+		<section class="main-content">Content 3</section>
+		<section class="main-content">Content 4</section>
+		<section class="main-content">Content 5</section>
+		<section class="main-content">Content 6</section>
+		<section class="main-content">Content 7</section>
+		<section class="main-content">Content 8</section>
+		<section class="main-content">Content 9</section>
+		<section class="main-content">Content 10</section>
+	</div>
+</body>
+</html>
