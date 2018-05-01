@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
+	<metacharset="UTF-8">
 	<title>class5</title>
 	<style>
 		*{
@@ -22,7 +22,7 @@
 			
 			 /*3d属性*/
 			-webkit-transform-style: preserve-3d;
-				-moz-transform-style: preserve-3d;
+			   -moz-transform-style: preserve-3d;
 				-ms-transform-style: preserve-3d;
 			        transform-style: preserve-3d;
 			/*元素与视图的距离*/
@@ -38,12 +38,15 @@
 			 /*3d属性*/
 			-webkit-transform-style: preserve-3d;
 			   -moz-transform-style: preserve-3d;
-			   -ms-transform-style: preserve-3d;
+			    -ms-transform-style: preserve-3d;
 			        transform-style: preserve-3d;
 			/*过度时间*/
 			-webkit-animation-duration: 5s;
-			-moz-animation-duration: 5s;
-			       animation-duration: 5s;
+			   -moz-animation-duration: 5s;
+			        animation-duration: 5s;
+	        -webkit-animation-iteration-count: infinite; 
+	           -moz-animation-iteration-count: infinite; 
+	           	    animation-iteration-count: infinite;
 			
 		}
 		li{
@@ -59,7 +62,7 @@
 		li:nth-of-type(1){
 			-webkit-transform: translateZ(100px);
 			   -moz-transform: translateZ(100px);
-			   -ms-transform: translateZ(100px);
+			    -ms-transform: translateZ(100px);
 			        transform: translateZ(100px);	
 		}
 		li:nth-of-type(2){
@@ -83,13 +86,13 @@
 		li:nth-of-type(5){
 			-webkit-transform: rotateX(90deg) translateZ(100px);
 			   -moz-transform: rotateX(90deg) translateZ(100px);
-			   -ms-transform: rotateX(90deg) translateZ(100px);
+			    -ms-transform: rotateX(90deg) translateZ(100px);
 			        transform: rotateX(90deg) translateZ(100px);			
 		}
 		li:nth-of-type(6){
 			-webkit-transform: rotateX(-90deg) translateZ(100px);
 			   -moz-transform: rotateX(-90deg) translateZ(100px);
-			   -ms-transform: rotateX(90deg) translateZ(100px);
+			     -ms-transform: rotateX(90deg) translateZ(100px);
 			        transform: rotateX(-90deg) translateZ(100px);
 		}
 		@-webkit-keyframes mymove {
@@ -125,7 +128,7 @@
         		100%{
 					-webkit-transform: rotateY(-270deg);
 					   -moz-transform: rotateY(-270deg);
-					   -ms-transform: rotateY(-270deg);
+					    -ms-transform: rotateY(-270deg);
 					        transform: rotateY(-270deg);
         		}
         	}
