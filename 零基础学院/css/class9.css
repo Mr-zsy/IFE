@@ -1,0 +1,387 @@
+body,h1,h2,h3,h4,h5,p,ul,li{
+	margin: 0;
+	padding: 0;
+	color: #BBBABA;
+	font-family: Arial, Helvetica;
+	font-size: 20px;
+}
+li{
+	list-style: none;
+}
+
+/*head部分*/
+#head-wrap{
+	/*min-width: 100%;*/
+	background-image: url(../img/class9-img/bg/bg1.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	width: 100%;
+	height: 700px;
+	padding-top: 100px;
+}
+#head-content{
+	width: 700px;
+	text-align: center;
+	margin: 0px auto;
+	padding:auto 100px;
+}
+#head-content h1{
+	color: white;
+	font-size: 62px;
+	margin-bottom: 50px;
+}
+#sign{
+	width: 800px;
+	text-align: center;
+	margin: 80px auto;
+	padding: 45px;
+	border: 1px solid #7D7C7C;
+}
+#sign h5{
+	color: white;
+	line-height: 1.5;
+}
+#sign span{
+	font-size: 16px;
+	line-height: 3;
+}
+#sign input{
+	box-sizing: border-box;
+	width: 200px;
+	height: 40px;
+	background: transparent;
+	color: white;
+	margin:45px 30px 0 0;
+	padding-left: 10px;
+}
+#sign button{
+	height: 41px;
+	width: 100px;
+}
+/*专栏一*/
+#feature1{
+	box-sizing: border-box;
+	width: 100%;
+	padding: 80px;
+}
+#f1-title{
+	width: 600px;
+	margin: 0 auto;
+	text-align: center;
+	color: black;
+}
+#f1-title h2{
+	font-size: 40px;
+	margin: 30px 0 50px;
+	color: black;
+}
+
+#f1-content{
+	width: 1000px;
+	margin: 0 auto;
+	overflow: hidden;
+	zoom:1;
+
+}
+#f1-content>div{
+	float: left;
+	width: 45%;
+	margin-bottom: 50px;
+}
+#f1-content>div img{
+	float: left;
+	margin-right: 20px;
+}
+#f1-content>div h4,
+#f1-content>div p{
+	overflow: hidden;
+	zoom:1;
+	
+}
+#f1-content>div h4{
+	color: black;
+}
+#f1-content1,#f1-content3{
+	margin-right: 100px;
+}
+/*专栏二*/
+#feature2{
+	background-image: url(../img/class9-img/bg/bg2.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	width: 100%;
+	height: 700px;
+	padding-top: 125px;
+	position: relative;
+}
+#f2-content{
+	width: 400px;
+	margin: 50px 100px 50px 200px;
+
+}
+#f2-content h2{
+	font-size: 42px;
+	margin-bottom: 50px;
+}
+#feature2 button:nth-of-type(1){
+	width: 200px;
+	height:40px;
+	color: black;
+	margin: 0 50px 0 200px;
+	
+}
+#feature2 button:nth-of-type(2){
+	width: 200px;
+	height:40px;
+	background: transparent;
+	
+}
+#ipad{
+	height: 800px;
+	position: absolute;
+	top: 15%;
+	right: 0;
+	background-image: url(../img/class9-img/ipad/IPad.png);
+	background-repeat: no-repeat;
+	background-size: contain;	
+}
+#ipad img{
+	width: 91%;
+	height: 60%;
+	margin-left: 51px;	
+	margin-top: 25px;
+}
+/*专栏三*/
+#feature3{
+	box-sizing: border-box;
+	width: 100%;
+	margin-bottom: 100px;
+}
+#f3-content{
+	width: 1000px;
+	overflow: hidden;
+	zoom:1;
+	text-align: center;
+	margin: 0 auto;
+}
+#feature3 h2{
+	font-size: 42px;
+	color: black;
+}
+.f3-contents{
+	float: left;
+	width: 26%;
+	margin-top: 50px;
+}
+.f3-contents p{
+	margin-top: 30px;
+}
+#f3-content2{
+	margin-left: 100px;
+	margin-right: 100px; 
+}
+
+/*专栏四*/
+#feature4{
+	box-sizing: border-box;
+	width: 100%;
+	padding:100px 250px 80px;
+	overflow: hidden;
+	zoom:1;
+}
+#feature4 h4{
+	color: black;
+	margin-top: 80px;
+	margin-bottom: 30px;
+}
+#f4-content1,
+#f4-content2{
+	width: 30%;
+	float: left;
+}
+#f4-content2{
+	clear: left;
+}#f4-content2 h4{
+	margin-top: 150px;
+}
+#feature4 img{
+	width: 623px;
+	height: 413px;
+}
+#feature4 img:nth-of-type(1){
+	float: left;
+	margin-right: 90px;
+}
+#feature4 img:nth-of-type(2){
+	float: right;
+	margin-top: 80px;
+
+}
+/*专栏五*/
+#feature5{
+	width: 100%;
+	margin-top: 50px;
+	margin-bottom: 100px;
+}
+#f5-content{
+	width: 1000px;
+	margin:0 auto;
+	text-align: center;
+	overflow: hidden;
+	zoom:1;
+}
+#feature5 h2{
+	font-size: 42px;
+	line-height: 2;
+	color: black;
+}
+#feature5 p{
+	width: 800px;
+	margin: 0 auto 50px;
+}
+.team-picture{
+	margin:10px;
+	width: 47%;
+	height: 350px;
+	background-size: cover;
+	float: left;
+}
+.message{
+	box-sizing: border-box;
+	height: 100%;
+	background-color: black;
+	opacity: 0.7;
+	padding: 100px;
+	display: none;
+}
+.message h4{
+	font-size: 20px;
+}
+.message span{
+	font-size: 15px;
+}
+.message img{
+	margin:30px 10px 0;
+}
+#person1{
+	background-image: url(../img/class9-img/Team/people/张思远大.png);
+}
+#person1:hover div{
+	display: block;
+}
+#person2{
+	background-image: url(../img/class9-img/Team/people/2.png);
+}
+#person2:hover div{
+	display: block;
+}
+#person3{
+	background-image: url(../img/class9-img/Team/people/3.png);	
+}
+#person3:hover div{
+	display: block;
+}
+#person4{
+	background-image: url(../img/class9-img/Team/people/沈大师大_meitu_3.png);
+}
+#person4:hover div{
+	display: block;
+}
+/*专栏六*/
+#feature6{
+	width: 1000px;
+	margin: 100px auto;
+	overflow: hidden;
+	zoom:1;
+}
+#feature6 form{
+	border:1px solid #BBBABA;
+	float: left;
+	width: 350px;
+	height: 400px;
+	text-align: center;
+	padding: 20px;
+}
+#feature6 form h4{
+	font-size: 18px;
+	color: black;
+	margin-bottom: 20px;
+}
+#feature6 form input{
+	box-sizing: border-box;
+	width: 300px;
+	height: 40px;
+	padding: 20px;
+	margin-bottom: 15px;
+}
+#feature6 form textarea{
+	box-sizing: border-box;
+	width: 300px;
+	padding: 20px;
+}
+#feature6 form button{
+	box-sizing: border-box;
+	width: 300px;
+	height: 40px;
+	background-color: black;
+	color:white;
+}
+#contacts{
+	float: right;
+	width: 350px;
+}
+#contacts h2{
+	font-size: 42px;
+	margin: 30px 0;
+	color: black;
+}
+#contacts ul li{
+	color: black;
+	margin: 15px 0;
+}
+#contacts ul li:nth-of-type(1){
+	margin-top: 50px;
+	padding-left: 40px;
+	background: url(../img/class9-img/contacts/Map.png) no-repeat left;
+}
+#contacts ul li:nth-of-type(2){
+	padding-left: 40px;
+	background: url(../img/class9-img/contacts/Phone.png) no-repeat left;
+}
+#contacts ul li:nth-of-type(3){
+	padding-left: 40px;
+	background: url(../img/class9-img/contacts/Mail.png) no-repeat left;
+}
+/*底部*/
+footer{
+	box-sizing: border-box;
+	width: 100%;
+	height: 300px;
+	background-color: black;
+	padding: 50px 0 0 140px;
+}
+footer>div{
+	float: left;
+	color: white;
+	margin-right: 150px;
+	width: 10%;
+	
+}
+.links a:link{
+	text-decoration: none;
+	color: #BBBABA;
+}
+.links li{
+	font-size: 16px;
+	margin-top: 20px;
+}
+#share{
+	width: 20%;
+	margin-right: 0;
+}
+#share p,
+#share a{
+	display: inline-block;
+	margin-top: 20px;
+	margin-right: 10px;
+}
