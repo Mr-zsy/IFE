@@ -189,7 +189,7 @@ input,button,textarea{
 /*专栏四*/
 #feature4{
 	width: 100%;
-	padding:100px 15.8% 80px;
+	padding:100px 19% 80px;
 	overflow: hidden;
 	zoom:1;
 }
@@ -209,12 +209,12 @@ input,button,textarea{
 	margin-top: 150px;
 }
 #feature4 img{
-	width: 40%;
-	height: 50%;
+	width: 50%;
+	height: 60%;
 }
 #feature4 img:nth-of-type(1){
 	float: left;
-	margin-right: 90px;
+	margin-right: 20%;
 }
 #feature4 img:nth-of-type(2){
 	float: right;
