@@ -23,7 +23,7 @@ input,button,textarea{
 	background-size: 100%;
 	width: 100%;
 	height: 800px;
-	padding-top: 10%;
+	padding-top: 7%;
 }
 #head-content{
 	width: 700px;
@@ -365,8 +365,8 @@ footer{
 footer>div{
 	float: left;
 	color: white;
-	margin-right: 150px;
-	width: 10%;
+	margin-right: 5%;
+	width: 15%;
 	
 }
 .links a:link{
