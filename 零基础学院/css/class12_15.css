@@ -353,7 +353,7 @@ div#menu-bottom {
 
 .chats p {
     clear: both;
-    margin-left: 20px;
+/*    margin-left: 20px;*/
 }
 
 .chat-pics {
@@ -376,9 +376,13 @@ div#menu-bottom {
     position: absolute;
     right: 21px;
 }
-
+#chat1 p{
+	margin-right: 20px;
+}
 #notification {
-    float: right;
+    position: absolute;
+    right: 21px;
+    bottom: 25px;
 }
 
 
@@ -438,7 +442,7 @@ div#menu-bottom {
     height: 100px;
     float: left;
     margin-top: 17px;
-    margin-left: 13px;
+    margin-right: 13px;
 }
 
 #img1 div,
@@ -486,7 +490,7 @@ div#menu-bottom {
 
 #new {
     color: #2399f1;
-    bottom: -2%;
+    bottom: -3%;
 }
 
 #add-message {
