@@ -1,0 +1,518 @@
+html,
+body,
+p,
+ul,
+li,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    color: #585d68;
+    /*overflow: hidden;*/
+}
+
+ul {
+    list-style: none;
+    color: #b7c0cd;
+}
+
+img:hover {
+    cursor: pointer;
+}
+
+aside,
+input,
+#messages-wrap,
+#app-btn-wrap,
+#menu-wrap,
+#head,
+#tools-right,
+#pages-btn,
+.img-outer,
+.chats,
+.messages,
+.message {
+    box-sizing: border-box;
+}
+
+
+/*侧边栏菜单*/
+
+aside {
+    height: 100%;
+    width: 350px;
+    float: left;
+    position: relative;
+    overflow-x: hidden;
+}
+
+
+/*按钮栏*/
+
+#app-btn-wrap {
+    width: 100px;
+    height: 100%;
+    background: #1d2531;
+    position: absolute;
+}
+
+#app-btn-wrap div {
+    left: 20px;
+    position: fixed;
+}
+
+.app-btn:nth-of-type(1) {
+    top: 20px;
+}
+
+.app-btn:nth-of-type(2) {
+    top: 100px;
+}
+
+.app-btn:nth-of-type(3) {
+    top: 180px;
+}
+
+.app-btn:nth-of-type(4) {
+    top: 260px;
+}
+
+.app-btn>img {
+    width: 60px;
+    height: 60px;
+}
+
+#bottom-actions {
+    bottom: 20px;
+}
+
+#bottom-actions img:nth-of-type(1) {
+    margin-right: 16px;
+}
+
+
+/*菜单*/
+
+#menu-wrap {
+    height: 100%;
+    width: 266px;
+    position: absolute;
+    top: 0;
+    left: 100px;
+    background: #222c3c;
+    padding: 30px 0 0 29px;
+    overflow-y: scroll;
+}
+
+#menu-wrap>div {
+    width: 191px;
+    border-bottom: 1px solid #5b6779;
+    margin-bottom: 25px;
+}
+
+#menu-wrap div h6 {
+    display: inline-block;
+    color: #5b6779;
+    margin-bottom: 25px;
+}
+
+#menu-wrap div ul>li {
+    margin-bottom: 20px;
+}
+
+#menu-wrap div img {
+    float: right;
+}
+
+#menu ul li:nth-of-type(2) {
+    background: url(../img/class12_15/menu/Notification_54.png) content-box border-box right no-repeat;
+}
+
+#dashboard ul li:nth-of-type(1) {
+    background: url(../img/class12_15/menu/Notification_21.png) content-box border-box right no-repeat;
+}
+
+#dashboard ul li:nth-of-type(3) {
+    background: url(../img/class12_15/menu/Alert-Icon.png) content-box border-box right no-repeat;
+}
+
+div#menu-bottom {
+    margin-top: 268px;
+    border-bottom: none;
+}
+
+#menu-bottom span:nth-of-type(1) {
+    margin-right: 22px;
+}
+
+#menu-bottom img {
+    margin: 13px 0 23px 0;
+}
+
+
+/*消息*/
+
+#messages-wrap {
+    float: right;
+    width: calc(100% - 350px);
+    height: 100%;
+    overflow-y: scroll;
+}
+
+
+/*头部*/
+
+#head {
+    position: fixed;
+    width: calc(100% - 350px);
+    height: 80px;
+    padding: 0 30px;
+    background: white;
+    border-bottom: 1px solid #5b6779;
+    z-index: 10;
+}
+
+#head h2 {
+    line-height: 80px;
+    display: inline-block;
+}
+
+#user {
+    width: 204px;
+    height: 58px;
+    display: inline-block;
+    position: absolute;
+    top: 11px;
+    right: 31px;
+    /*overflow: hidden;
+	zoom:1;*/
+}
+
+#user img:nth-of-type(1) {
+    float: left;
+    margin-right: 16px;
+}
+
+#user img:nth-of-type(2) {
+    float: right;
+}
+
+
+/*搜索栏及操作栏*/
+
+#tools-wrap {
+    margin-top: 80px;
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid #5b6779;
+    overflow: hidden;
+    zoom: 1;
+}
+
+#search {
+    width: 400px;
+    height: 100%;
+    border-right: 1px solid #5b6779;
+    float: left;
+    position: relative;
+}
+
+#search input {
+    width: 340px;
+    height: 36px;
+    padding: 13px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -170px;
+    margin-top: -18px;
+    background: url(../img/class12_15/chat/Search-icon.png) right content-box border-box no-repeat;
+}
+
+#tools-right {
+    width: calc(100% - 401px);
+    height: 100%;
+    float: right;
+    padding: 20px 30px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+#options {
+    width: 75.4%;
+    height: 36px;
+    display: inline-block;
+    border-right: 1px solid #5b6779;
+    line-height: 100%;
+}
+
+#options span {
+    font-size: 18px;
+    line-height: 36px;
+}
+
+#options-content {
+    float: right;
+    width: 109px;
+    height: 32px;
+    margin-right: 24px;
+    border-radius: 5px;
+    background: url(../img/class12_15/chat/Base.png) center border-box no-repeat;
+    background-size: 100%;
+}
+
+.img-outer {
+    width: 33%;
+    height: 100%;
+    float: left;
+    padding: 8px;
+}
+
+.img-outer:nth-of-type(2) {
+    border-left: 1px solid #D9DBDE;
+    border-right: 1px solid #D9DBDE;
+}
+
+
+/*翻页按钮*/
+
+#pages-wrap {
+    display: inline-block;
+    width: 15.6%;
+    height: 32px;
+    margin-left: 5%;
+    flex: 1 1 15.6%;
+}
+
+#pages-wrap span,
+#pages-btn {
+    float: left;
+    margin-left: 15px;
+}
+
+#pages-wrap span {
+    line-height: 32px;
+}
+
+#pages-btn {
+    width: 41.5%;
+    height: 32px;
+    border-radius: 5px;
+    background: url(../img/class12_15/chat/Base.png) center border-box no-repeat;
+    background-size: cover;
+    font-size: 0;
+}
+
+#pages-btn div {
+    width: calc(50% - 0.5px);
+    height: 100%;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+}
+
+#pages-btn div:nth-of-type(1) {
+    border-right: 1px solid #D9DBDE;
+}
+
+#pages-btn div img {
+    position: absolute;
+    top: 50%;
+    margin-top: -5px;
+}
+
+
+/*聊天信息列表*/
+
+#chats-wrap {
+    width: 400px;
+    border-right: 1px solid #D9DBDE;
+    float: left;
+}
+
+.chats {
+    padding: 15px 21px 23px 27px;
+    overflow: hidden;
+    zoom: 1;
+    position: relative;
+    border-bottom: 1px solid #D9DBDE;
+}
+
+.chats p {
+    clear: both;
+    margin-left: 20px;
+}
+
+.chat-pics {
+    margin-right: 21px;
+    margin-bottom: 14px;
+}
+
+.chat-pics,
+.user {
+    float: left;
+}
+
+.user {}
+
+.user b {
+    margin-bottom: 7px;
+}
+
+.time {
+    position: absolute;
+    right: 21px;
+}
+
+#notification {
+    float: right;
+}
+
+
+/*聊天信息*/
+
+#messages {
+    float: left;
+    width: calc(100% - 401px);
+    height: 100%;
+    /*display: flex;*/
+}
+
+.message {
+    padding: 3.4% 3.4% 0;
+    margin-bottom: 3%;
+    overflow: hidden;
+    zoom: 1;
+}
+
+.message-pic,
+.message-content {
+    float: left;
+}
+
+.message-pic {
+    width: 46px;
+    height: 46px;
+    margin-right: 26px;
+}
+
+.message-content {
+    width: calc(100% - 72px)
+}
+
+.message-content b span {
+    color: #7f8fa4;
+}
+
+.message-content p {
+    margin-top: 10px;
+}
+
+
+/*时间显示的框*/
+
+#message-border {
+    border-top: 1px solid #D9DBDE;
+    border-bottom: 1px solid #D9DBDE;
+    position: relative;
+}
+
+#img1,
+#img2 {
+    display: block;
+    position: relative;
+    width: 156px;
+    height: 100px;
+    float: left;
+    margin-top: 17px;
+    margin-left: 13px;
+}
+
+#img1 div,
+#img2 div {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.7;
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+#img1 div img,
+#img2 div img {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -25px;
+    margin-top: -25px;
+}
+
+#img1:hover div,
+#img2:hover div {
+    display: block;
+}
+
+#tuesday,
+#new {
+    width: 100px;
+    height: 20px;
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    text-align: center;
+    background-color: white;
+}
+
+#tuesday {
+    top: -2%;
+}
+
+#new {
+    color: #2399f1;
+    bottom: -2%;
+}
+
+#add-message {
+    width: 92.77%;
+    height: 54px;
+    margin: 0 auto 10px;
+    border: 1px solid #D9DBDE;
+    overflow: hidden;
+    zoom: 1;
+    border-radius: 5px;
+    /*letter-spacing: 0;*/
+}
+
+#add-message input,
+#add-message img {
+    float: left;
+}
+
+#add-message img {
+    width: 54px;
+    height: 100%;
+}
+
+#add-message input {
+    width: calc(100% - 54px);
+    height: 100%;
+    padding: 20px;
+    border: none;
+}
