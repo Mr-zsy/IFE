@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>99乘法表</title>
+	<style>
+        div{
+            text-align: center;
+            width: 1000px;
+            position: absolute;
+			top: 20%;
+			left: 50%;
+			margin-left: -500px;
+
+        }
+        table{
+            margin: 0 auto;
+            border: 3px solid red;
+            padding: 5px;
+        }
+        td{
+        	padding: 5px;
+        	font-size: 30px;
+            border: 1px solid green;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+	<div>
+		<table>
+			<script>
+				for(var i =1;i<=9;i++){
+			        document.write('<tr>');//添加tr开始标签
+			        for(var j=1;j<=i;j++){
+			            document.write("<td>"+i+"*"+j+"="+i*j+"</td>");//让其在td标签中显示
+			        }
+			        document.write("</tr>")//添加tr结束标签
+   				 }
+			</script>
+		</table>
+	</div>
+</body>
+</html>
