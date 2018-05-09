@@ -113,10 +113,13 @@ aside {
     left: 100px;
     background: #222c3c;
     padding: 30px 0 0 29px;
+    display: flex;
+    flex-direction: column;
     overflow-y: scroll;
 }
 
 #menu-wrap>div {
+	flex-grow: 1;
     width: 191px;
     border-bottom: 1px solid #5b6779;
     margin-bottom: 25px;
@@ -149,7 +152,7 @@ aside {
 }
 
 div#menu-bottom {
-    margin-top: 268px;
+     margin-top: 270px;
     border-bottom: none;
 }
 
@@ -158,7 +161,7 @@ div#menu-bottom {
 }
 
 #menu-bottom img {
-    margin: 13px 0 23px 0;
+    margin-top: 13px;
 }
 
 
@@ -489,6 +492,7 @@ div#menu-bottom {
 }
 
 #new {
+	width: 150px;
     color: #2399f1;
     bottom: -3%;
 }
