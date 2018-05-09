@@ -156,9 +156,6 @@ div#menu-bottom {
     border-bottom: none;
 }
 
-#menu-bottom span:nth-of-type(1) {
-    margin-right: 22px;
-}
 
 #menu-bottom img {
     margin-top: 13px;
