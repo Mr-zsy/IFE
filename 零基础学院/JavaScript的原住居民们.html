@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>class22/24</title>
+</head>
+<body>
+	<h1>F12 看控制台!</h1>
+	<script>
+		/*
+		实现一个字符串头尾去除空格的函数
+		注意需要去除的空格，包括全角、半角空格
+		暂时不需要学习和使用正则表达式的方式
+		*/
+		function diyTrim(str) {
+		    var result = "";
+		    let start; //非空起始位置
+		    let end;   //非空终止位置
+		    //注意全角和半角！！！！
+		    //全角空格 Unicode编码 12288
+		    //半角空格 Unicode编码 32
+		     for(let i=0;i<str.length;i++){
+		    	if((str.charCodeAt(i) != 12288)&&(str.charCodeAt(i) != 32) ){
+		    		// console.log(i);
+		    		start = i;
+		    		break;
+		    	}
+		    }
+		    for(let i=str.length-1;i>=0;i--){
+		    	if((str.charCodeAt(i) != 12288)&&(str.charCodeAt(i) != 32) ){
+		    		end = i+1;
+		    		break;
+		    	}
+		    }
+		    result = str.substring(start,end);
+
+		    return result
+		}
+
+		// 测试用例
+		console.log(diyTrim(' a f b    ')); // ->a f b
+		console.log(diyTrim('    ffdaf    ')); // ->ffdaf
+		console.log(diyTrim('1    ')); // ->1
+		console.log(diyTrim('　　f')); // ->f
+		console.log(diyTrim('  　  a f b 　　 ')); // ->a f b
+		console.log(diyTrim(' ')); // ->
+		console.log(diyTrim('　')); // ->
+		console.log(diyTrim('')); // ->
+		console.log('************************************************');
+		console.log('去掉字符串str中，连续重复的地方');
+		/*
+		去掉字符串str中，连续重复的地方
+		*/
+		function removeRepetition(str) {
+		    var result = "";
+
+		    for(let i =0;i<str.length;i++){
+		    	if(result[result.length-1]!=str[i]){
+		    		result +=str[i]; 
+		    	}
+		    }
+
+		    return result;
+		}
+
+		// 测试用例
+		console.log(removeRepetition("aaa")); // ->a
+		console.log(removeRepetition("abbba")); // ->aba
+		console.log(removeRepetition("aabbaabb")); // ->abab
+		console.log(removeRepetition("")); // ->
+		console.log(removeRepetition("abc")); // ->abc
+		console.log('************************************************');
+
+		var tree = {
+		    "id": 0,
+		    "name": "root",
+		    "left": {
+		        "id": 1,
+		        "name": "Simon",
+		        "left": {
+		            "id": 3,
+		            "name": "Carl",
+		            "left": {
+		                "id": 7,
+		                "name": "Lee",
+		                "left": {
+		                    "id": 11,
+		                    "name": "Fate"
+		                }
+		            },
+		            "right": {
+		                "id": 8,
+		                "name": "Annie",
+		                "left": {
+		                    "id": 12,
+		                    "name": "Saber"
+		                }
+		            }
+		        },
+		        "right": {
+		            "id": 4,
+		            "name": "Tony",
+		            "left": {
+		                "id": 9,
+		                "name": "Candy"
+		            }
+		        }
+		    },
+		    "right": {
+		        "id": 2,
+		        "name": "right",
+		        "left": {
+		            "id": 5,
+		            "name": "Carl",
+		        },
+		        "right": {
+		            "id": 6,
+		            "name": "Carl",
+		            "right": {
+		                "id": 10,
+		                "name": "Kai"
+		            }        
+		        }
+		    }
+		}
+
+		// 假设id和name均不会重复，根据输入name找到对应的id
+		function findIdByName(obj,name) {
+				 if(obj.name == name){
+				 	console.log(obj.id);
+				 }
+				if(obj.left){
+					findIdByName(obj.left,name);
+				}
+				if(obj.right){
+					findIdByName(obj.right,name);
+				}
+			}
+		console.log("Id为：")
+		findIdByName(tree,"Tony");
+		// 假设id和name均不会重复，根据输入id找到对应的name
+		function findNameById(obj,id) {
+			if(obj.id == id){
+				console.log(obj.name);
+			}
+			if(obj.left){
+				findNameById(obj.left,id);
+			}
+			if(obj.right){
+				findNameById(obj.right,id);
+			}
+
+		}
+		console.log("Name为：")
+		findNameById(tree,7);
+
+		// 把这个对象中所有的名字以“前序遍历”的方式全部输出到console中
+		function getListWithDLR(obj) {
+			console.log(obj.name);
+			if(obj.left){
+				getListWithDLR(obj.left);
+			}
+			if(obj.right){
+				getListWithDLR(obj.right);
+			}
+		}
+		console.log("前序遍历：");
+		getListWithDLR(tree);
+
+		// 把这个对象中所有的名字以“中序遍历”的方式全部输出到console中
+		function getListWithLDR(obj) {
+				if(obj.left){
+					getListWithLDR(obj.left);
+				}
+				console.log(obj.name);
+				if(obj.right){
+					getListWithLDR(obj.right);
+				} 		
+		}
+		console.log("中序遍历：");
+		getListWithLDR(tree);
+
+		// 把这个对象中所有的名字以“后序遍历”的方式全部输出到console中
+		function getListWithLRD(obj) {
+				if(obj.left){
+					getListWithLRD(obj.left);
+				}
+				if(obj.right){
+					getListWithLRD(obj.right);
+				} 
+				console.log(obj.name);
+		}
+		console.log("后序遍历：");
+		getListWithLRD(tree);
+		console.log("***********************************");
+
+	var arr = [[10, 14], [16, 60], [7, 44], [26, 35], [22, 63]];
+	var mapped = arr.map(function(ar,i){
+		return {value:ar[1],index:i}
+	})
+	mapped.sort(function(a,b){
+		return b.value-a.value;
+	})
+	var result = mapped.map(function(ar){
+		return arr[ar.index];
+	})
+	console.log("按照每个元素中第二个数从大到小的顺序进行排序输出，输出结果应该为:")
+	console.log(result);
+	console.log("***********************************");
+	var scoreObject = {
+    "Tony": {
+        "Math": 95,
+        "English": 79,
+        "Music": 68
+    }, 
+    "Simon": {
+        "Math": 100,
+        "English": 95,
+        "Music": 98
+    }, 
+    "Annie": {
+        "Math": 54,
+        "English": 65,
+        "Music": 88
+    }
+}
+console.log("对象转化为数组：")
+function change(obj){
+	let arr = [];
+	for(o in obj){
+		let ar = [];
+		ar.unshift(o);
+		for(i in obj[o]){
+			ar.unshift(i);
+		}
+		arr.unshift(ar);
+	}
+	console.log(arr);
+}
+change(scoreObject);
+	console.log("***********************************");
+	console.log("数组转化为对象：")
+	
+	</script>
+</body>
+</html>
