@@ -240,7 +240,49 @@ function change(obj){
 change(scoreObject);
 	console.log("***********************************");
 	console.log("数组转化为对象：")
-	
+
+	var menuArr = [
+		    [1, "Area1", -1],
+		    [2, "Area2", -1],
+		    [3, "Area1-1", 1],
+		    [4, "Area1-2", 1],
+		    [5, "Area2-1", 2],
+		    [6, "Area2-2", 2],
+		    [7, "Area1-2-3", 4],
+		    [8, "Area2-2-1", 6],
+		];
+
+	var mapped = menuArr.map(function(arr,i){
+		return {objName:arr[0],obj:{name:arr[1]},parentNum:arr[2]};
+	});
+
+	 // console.log(mapped);
+	 var menuObject = {};
+	function changeObj(){
+		for(var i=mapped.length-2;i>=0;i--){
+			for(var j=mapped.length-1;j>=i;j--){
+				if(mapped[i].objName == mapped[j].parentNum){
+					// console.log("j:"+mapped[j].parentNum);
+					// console.log("i:"+mapped[i].objName);
+					if(mapped[i].obj["subMenu"]){
+						// console.log("存在 subMenu");
+						mapped[i].obj["subMenu"][mapped[j].objName] = mapped[j].obj;
+						// console.log(mapped[i].obj);
+					}else{
+						// console.log("创建 subMenu：");
+						mapped[i].obj["subMenu"] = {};
+						mapped[i].obj["subMenu"][mapped[j].objName] = mapped[j].obj;
+						// console.log(mapped[i].obj);
+					}
+				}
+			}
+		}
+		
+		menuObject[mapped[0].objName] = mapped[0].obj;
+		menuObject[mapped[1].objName] = mapped[1].obj;
+		console.log(menuObject);
+	}
+	changeObj();
 	</script>
 </body>
 </html>
