@@ -15,7 +15,6 @@ function judgeYear(year){
 function judgeMonth(year,month){
 	var days = document.querySelectorAll("#day-select option:nth-last-child(-n+3)");
 	Array.from(days).map(function(item){
-		console.log(item);
 		item.style.display = "block";
 	})
 	if(year && month == 2){
