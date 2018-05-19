@@ -87,7 +87,7 @@ function intervalTime(year,month){
 	//页面时间在过去
 	if(nowDate.getTime() > pageDate.getTime()){
 		// console.log("页面时间在过去");
-		result.innerHTML = `现在距离${year}年${month}月${day}日 星期${weekDay} ${hour}:${minite}:${second} 还有${intervalDay}天${intervalHour}小时${intervalMinite}分${intervalSecond}秒`;
+		result.innerHTML = `现在距离${year}年${month}月${day}日 星期${weekDay} ${hour}:${minite}:${second} 已经过去${intervalDay}天${intervalHour}小时${intervalMinite}分${intervalSecond}秒`;
 	}else{//页面时间在未来
 		// console.log("页面时间在未来");
 		result.innerHTML = `现在距离${year}年${month}月${day}日 星期${weekDay} ${hour}:${minite}:${second} 还有${-intervalDay}天${-intervalHour}小时${-intervalMinite}分${-intervalSecond}秒`;
@@ -97,15 +97,15 @@ function intervalTime(year,month){
 var year = document.getElementById("year-select");
 var month = document.getElementById("month-select");
 window.onload = function(){
-	intervalTime(year.value,month.value);
+	intervalTime(year.value,month.value-1);
 	// console.log(1);
 };
 
 var box = document.getElementById("date-wrap");
 box.onchange = function(event){
 	if(event.target.id == "year-select" || event.target.id == "month-select"){
-		judgeMonth(judgeYear(year.value),month.value);
+		judgeMonth(judgeYear(year.value),month.value-1);
 	}
-	intervalTime(year.value,month.value);
+	intervalTime(year.value,month.value-1);
 
 }
