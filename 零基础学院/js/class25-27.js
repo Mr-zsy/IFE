@@ -18,12 +18,12 @@ function judgeMonth(year,month){
 		item.style.display = "block";
 	})
 	if(year && month == 2){
-		var disableDays = document.querySelectorAll("#day-select option:nth-last-child(-n+3)");
+		var disableDays = document.querySelectorAll("#day-select option:nth-last-child(-n+2)");
 		Array.from(disableDays).map(function(item){
 			item.style.display = "none";
 		})
 	}else if(!year && month == 2){
-		var disableDays = document.querySelectorAll("#day-select option:nth-last-child(-n+2)");
+		var disableDays = document.querySelectorAll("#day-select option:nth-last-child(-n+3)");
 		Array.from(disableDays).map(function(item){
 			item.style.display = "none";
 		})

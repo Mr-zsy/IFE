@@ -141,21 +141,23 @@ input,button,textarea{
 	
 }
 #ipad{
+
 	width: 31.5%;
-	height: 64.86%;
+	height: 58.86%;
 	position: absolute;
-	top: 17%;
+	top: 15%;
 	right: 0;
 	background-image: url(../img/class9-img/ipad/IPad.png);
 	background-repeat: no-repeat;
-	background-size: contain;	
+	background-size: cover;	
 	overflow: hidden;
 }
 #ipad img{
 	width: 100%;
-	height: 83%;
-	margin-left: 57px;	
-	margin-top: 30px;
+	height: 90%;
+	margin-left:11.5%;
+	margin-top:6%;
+
 }
 /*专栏三*/
 #feature3{
