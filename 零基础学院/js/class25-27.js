@@ -106,5 +106,5 @@ box.onchange = function(event){
 		judgeMonth(judgeYear(year.value),month.value);
 	}
 	intervalTime(year.value,month.value);
-
 }
+setInterval(function(){intervalTime(year.value,month.value);},1000);
