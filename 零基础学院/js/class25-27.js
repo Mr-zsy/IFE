@@ -45,7 +45,7 @@ function intervalTime(year,month){
 	var second = document.getElementById("second-select").value;
 	var pageDate = new Date();
 	pageDate.setFullYear(year);
-	pageDate.setMonth(month);
+	pageDate.setMonth(month-1);// 注意  -1
 	pageDate.setDate(day);
 	pageDate.setHours(+hour);//注意个位数时此处去掉0
 	pageDate.setMinutes(minite);
@@ -97,15 +97,15 @@ function intervalTime(year,month){
 var year = document.getElementById("year-select");
 var month = document.getElementById("month-select");
 window.onload = function(){
-	intervalTime(year.value,month.value+1);
+	intervalTime(year.value,month.value);
 	// console.log(1);
 };
 
 var box = document.getElementById("date-wrap");
 box.onchange = function(event){
 	if(event.target.id == "year-select" || event.target.id == "month-select"){
-		judgeMonth(judgeYear(year.value),month.value+1);
+		judgeMonth(judgeYear(year.value),month.value);
 	}
-	intervalTime(year.value,month.value+1);
+	intervalTime(year.value,month.value);
 
 }
