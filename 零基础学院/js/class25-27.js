@@ -86,10 +86,10 @@ function intervalTime(year,month){
 	var intervalSecond = parseInt((nowDate.getTime() - pageDate.getTime() -intervalDay*86400000 - intervalHour*3600000-intervalMinite*60000)/1000);
 	//页面时间在过去
 	if(nowDate.getTime() > pageDate.getTime()){
-		console.log("页面时间在过去");
+		// console.log("页面时间在过去");
 		result.innerHTML = `现在距离${year}年${month}月${day}日 星期${weekDay} ${hour}:${minite}:${second} 还有${intervalDay}天${intervalHour}小时${intervalMinite}分${intervalSecond}秒`;
 	}else{//页面时间在未来
-		console.log("页面时间在未来");
+		// console.log("页面时间在未来");
 		result.innerHTML = `现在距离${year}年${month}月${day}日 星期${weekDay} ${hour}:${minite}:${second} 还有${-intervalDay}天${-intervalHour}小时${-intervalMinite}分${-intervalSecond}秒`;
 	}
 }
@@ -98,7 +98,7 @@ var year = document.getElementById("year-select");
 var month = document.getElementById("month-select");
 window.onload = function(){
 	intervalTime(year.value,month.value);
-	console.log(1);
+	// console.log(1);
 };
 
 var box = document.getElementById("date-wrap");
