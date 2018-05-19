@@ -97,15 +97,15 @@ function intervalTime(year,month){
 var year = document.getElementById("year-select");
 var month = document.getElementById("month-select");
 window.onload = function(){
-	intervalTime(year.value,month.value-1);
+	intervalTime(year.value,month.value+1);
 	// console.log(1);
 };
 
 var box = document.getElementById("date-wrap");
 box.onchange = function(event){
 	if(event.target.id == "year-select" || event.target.id == "month-select"){
-		judgeMonth(judgeYear(year.value),month.value-1);
+		judgeMonth(judgeYear(year.value),month.value+1);
 	}
-	intervalTime(year.value,month.value-1);
+	intervalTime(year.value,month.value+1);
 
 }
