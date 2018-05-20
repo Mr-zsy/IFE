@@ -17,6 +17,11 @@ var selects = document.querySelectorAll("select");
 			var option = document.createElement("option");
 			option.value = j;
 			option.innerHTML = j;
+			if(index == 3){
+				if(j<10){
+					option.innerHTML = "0"+j;
+				}
+			}
 			item.appendChild(option);
 		}
 	});
