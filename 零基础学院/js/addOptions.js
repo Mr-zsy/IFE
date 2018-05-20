@@ -6,9 +6,9 @@ var selects = document.querySelectorAll("select");
    	  year : [1980,2030],
 	 month : [1,12],
 	   day : [1,31],
-	  hour : [0,95],
-	minite : [0,95],
-	second : [0,95]
+	  hour : [0,23],
+	minite : [0,59],
+	second : [0,59]
 	}
 	let optionNames = Object.keys(options);
 	Array.from(selects).forEach( function(item,index) {
