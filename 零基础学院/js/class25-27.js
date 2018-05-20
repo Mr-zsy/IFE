@@ -92,6 +92,8 @@ function intervalTime(year,month){
 		result.innerHTML = `现在距离${year}年${month}月${day}日 星期${weekDay} ${hour}:${minite}:${second} 还有${-intervalDay}天${-intervalHour}小时${-intervalMinite}分${-intervalSecond}秒`;
 	}
 }
+
+
 //获取页面设置时间
 var year = document.getElementById("year-select");
 var month = document.getElementById("month-select");
