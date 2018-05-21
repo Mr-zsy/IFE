@@ -125,6 +125,7 @@ emailInput.oninput = function() {
 tip.onclick = function(event){
 	emailInput.value = event.target.innerHTML;
 	hideTips();
+	emailInput.focus();
 }
 window.onkeyup = function changeIndex(e){
 	var selectTips = document.querySelectorAll("#email-sug-wrapper li");
@@ -157,8 +158,14 @@ window.onkeyup = function changeIndex(e){
 	  		nowSelectTipIndex =selectTips.length-1;
 	  		addTipStyle(selectTips,nowSelectTipIndex);
 	  	}
-	}else if(keynum == 13){
+	  }else if(keynum == 13){
 		emailInput.value = selectTips[nowSelectTipIndex].innerHTML;
 		hideTips();
+	}else if (keynum == 27) {
+		emailInput.select();
 	}
+}
+
+window.onload = function(){
+	emailInput.focus();
 }
